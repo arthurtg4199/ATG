@@ -1,0 +1,10 @@
+replicaCount: 2
+
+image:
+  repository: your-dockerhub-username/cloud-devops-demo
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
