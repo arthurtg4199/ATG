@@ -1,4 +1,5 @@
-name: Docker Image CI
+- name: Build the Docker image
+  run: docker build ./cloud-devops-demo --file ./cloud-devops-demo/Dockerfile --tag my-image-name:$(date +%s)
 
 on:
   push:
